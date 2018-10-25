@@ -1,0 +1,115 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon/icomoon.eot?srf3rx");
+  src: url("../fonts/icomoon/icomoon.eot?srf3rx#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.ttf?srf3rx") format("truetype"), url("../fonts/icomoon/icomoon.woff?srf3rx") format("woff"), url("../fonts/icomoon/icomoon.svg?srf3rx#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body {
+  font-family: Baskerville, 'Palatino Linotype', Palatino, 'Century Schoolbook L', 'Times New Roman', 'serif',sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #050505;
+  background: #B3B3B3;
+  height: 100%;
+  position: relative;
+}
+
+header{
+	background: #B3B3B3;
+	height: 100%;
+	float: left;
+	position: static;
+	
+	
+}
+nav{
+	background: #333333	;
+	height: 220px;
+}
+nav li{
+	list-style: none;
+	display:inline-flex;
+	padding: 10px 30px;
+	
+}
+nav a{
+	color: #F0B429;
+	font-size:  20px;
+	font-weight:100;
+	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	text-decoration:inherit;
+	padding: 5px 15px;
+}
+
+nav a:hover{
+	background: #F47920;
+	color: #FCFBFB;
+
+}
+
+a {
+  color: #333333;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+a:hover, a:active, a:focus {
+  color: #F0B429;
+  outline: none;
+}
+
+p {
+  margin-bottom: 1.5em;
+}
+
+h1, h2 {
+  color: #F47920;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  margin: 0 0 30px 0;
+}
+
+h3, h4, h5, h6 {
+	color: #005883;
+	font-family: "Gill Sans", Helvetica, Arial, "sans-serif";
+	font-weight: 400;
+  margin: 0 0 30px 0;
+}
+
+aside{
+	 float: right; 
+	 width: 250px;
+	 background: #FFFFFF;
+	 margin-top: 10px;
+	 border-radius: 10px;
+}
+
+footer {
+	height: 50px;
+	background: #000000;
+	color: #FFFFFF;
+	clear: both;
+	font-size: 15px;
+	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	text-align: center;
+	line-height: 1px;
+	padding: 10px;
+}
+
+#contenedor{
+	width: 960px;
+	margin: auto;
+	margin-top: 20px; 
+	border-radius: 10px; 
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+
