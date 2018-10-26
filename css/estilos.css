@@ -98,10 +98,10 @@ footer {
 	background: #000000;
 	color: #FFFFFF;
 	clear: both;
-	font-size: 15px;
+	font-size: 20px;
 	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
 	text-align: center;
-	line-height: 1px;
+	line-height: 8px;
 	padding: 10px;
 }
 #contenido {
@@ -133,7 +133,7 @@ footer {
 	 float:left;
 	 margin: 10px;
 }
-.introduccion,.inicio,.lec1,.lec2,.lec3 p{
+.introduccion,.inicio,.lec1,.lec2,.lec3,.intmultimedia p{
 	margin: 10px;
 	margin-bottom: 5px;
 	margin-top: 5px;
