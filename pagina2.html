@@ -1,15 +1,94 @@
 <!doctype html>
 <html lang="es">
 <head>
-<meta charset="utf-8">
-<title>pagina2</title>
+   <meta charset="utf-8">
+   <title>Métodos de Ordenación con Programación Orientada a Objetos</title>
+   <link rel="stylesheet" href="css/normalize.css">
+   <link rel="stylesheet" href="css/estilos.css">
 </head>
-
 <body>
-	<h1>Pagina 2</h1>
+	<div id="contenedor">
+		<header>
+			<img src ="img/banner.png" height="155" width= "1100" >
+		</header>
 	
-	<ul>
-		<li><a href="index.html">Inicio</a></li>
-	</ul>
+        <nav>
+			<ul>
+			<li><a href="index.html">INICIO</a></li>
+			<li><a href="pagina2.html">LECTURAS</a>
+				<ul>
+				    <li><a href="#tl1">Ordenación por Burbuja</a></li>
+				    <li><a href="#tl2">Ordenación por Selección</a></li>
+				    <li><a href="#tl3">Ordenación por inserción</a></li>
+				</ul>	
+			</li>
+			<li><a href="http://www.unad.edu.co">MULTIMEDIA</a>
+
+			</li>
+			<li><a href="http://www.unad.edu.co">ACTIVIDADES</a></li>
+			<li><a href="http://www.unad.edu.co">AUTORES</a></li>
+	   		</ul>
+			
+		</nav>
+	
+	
+		<section id="contenido">
+ 		 	<article class="lec1">
+				<h2 id="tl1" align="center">Ordenación por Burbuja</h2>
+				<center>
+	            <img src="img/imgburbuja.jpg" height="327" width= "450" alt="Progrmación">
+	            </center>
+			  <p>El método de ordenamiento conocido como método de la burbuja consiste en tomar el último elemento, compararlo con el anterior y, de ser necesario, realizar el intercambio para que el elemento menor siempre quede adelante. Luego, se toma el penúltimo elemento, se compara con el anterior y, de ser necesario, se realiza el intercambio, y así sucesivamente, hasta que el menor elemento de todo el array se encuentre en la primera posición. Como el elemento menor ya está en su sitio, este debe obviarse en los siguientes pasos; por lo tanto, se repite todo el proceso, pero sin considerar los elementos que van quedando en su sitio.
+				<br>
+				Al inicio debemos leer los n elementos en el array x[i]. En los bucles anidados, el bucle más interno (el bucle j) recorre todos los elementos del array desde la última posición (n-1) hasta la última ubicación ordenada (i). En la primera iteración irá comparando cada elemento con el anterior desde n-1 hasta i=1. Al llegar al elemento con subíndice j=1 (j>=i) se hace la comparación x[0]>x[1], con lo cual aseguramos que fueron comparados todos los elementos. El elemento menor de todos ellos se encuentra en x[0]. Luego i se incrementa en 1, para que en el bucle j el elemento x[0], al estar ordenado, no sea tomado en cuenta. Posteriormente se recorren los elementos sin ordenar, desde la última posición (n-1) hasta la última posición no ordenada i, comparándolos e intercambiándolos hasta finalizar el bucle i; esto es, hasta que todos los elementos estén ordenados o hasta que la última posición no ordenada sea la (n-1). Finalmente, imprimimos el array correctamente ordenado.
+				</p>
+				
+				<p><em><small>Liza Ávila, C. (2013). Algoritmos y su codificación en C++. Capitulo 7 Arreglos Unidimensionales.(pp 7.10) (Vol. Primera edición). Los Olivos, Lima: Fondo Editorial UPN. Recuperado de <a href="http://bibliotecavirtual.unad.edu.co/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=nlebk&AN=1444739&lang=es&site=eds-live">http://bibliotecavirtual.unad.edu.co/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=nlebk&AN=1444739&lang=es&site=eds-live</a></small></em></p>
+				
+			</article>
+			 <article class="lec3">
+				<h2 id="tl2"  align="center">Ordenación por Selección</h2>
+				<center>
+	            <img src="img/imgseleccion.jpg" height="268" width= "400" alt="Progrmación">
+	            </center>
+				<p>
+				El método de selección consiste en seleccionar el menor elemento del array e intercambiarlo con el elemento ubicado en la primera posición. Entre los elementos restantes, nuevamente buscamos el menor y lo intercambiamos con el elemento que se encuentra en la segunda ubicación, y así sucesivamente hasta tener todos los elementos ordenados.
+				<br>
+				Una vez leídos los elementos y entrando al algoritmo de ordenamiento en sí, la primera vez que se ejecuta el bucle i hacemos la asignación k=i. Aquí estamos suponiendo que el menor elemento es el primero y corresponde al subíndice 0 (esto es parte del algoritmo de buscar el menor elemento de un array). Luego se inicia el bucle j, que sirve para encontrar el menor elemento de todos los elementos restantes, tomando como valor inicial de comparación al primer elemento.
+				<br>
+				Al término del bucle j, k contiene el subíndice del menor elemento, el cual será usado para intercambiar la primera ubicación no ordenada mediante el algoritmo de intercambio de dos valores: tmp = x[k]; x[k] = x[i]; x[i] = tmp Estos pasos se repiten hasta tener todos los elementos ordenados. Finalmente, solo nos resta imprimir el array ordenado.
+				</p>
+				<br>
+				<p><em><small>Liza Ávila, C. (2013). Algoritmos y su codificación en C++. Capitulo 7 Arreglos Unidimensionales.(pp 7.10) (Vol. Primera edición). Los Olivos, Lima: Fondo Editorial UPN. Recuperado de <a href="http://bibliotecavirtual.unad.edu.co/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=nlebk&AN=1444739&lang=es&site=eds-live">http://bibliotecavirtual.unad.edu.co/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=nlebk&AN=1444739&lang=es&site=eds-live</a></small></em></p>
+ 			 </article>
+			</article>	
+			<article class="lec2">
+				<h2 id="tl3" align="center">Ordenación por Inserción</h2>
+				<img src="img/programando.jpg" alt="programando" height="300">
+				<p>El método de inserción consiste en tomar el segundo elemento e insertarlo junto al primero en la posición que corresponda. Luego, se toma el tercer elemento y se le inserta entre los dos elementos en la posición adecuada. El cuarto elemento se inserta entre los tres elementos en la posición adecuada, y así sucesivamente, hasta tomar el último elemento. Tomemos el primer elemento x[0]; luego, los elementos restantes que queramos insertar serán desde i=1 hasta i=n-1, esto es, manejado por el bucle más externo (bucle i) de los bucles anidados. Posteriormente, asignamos el elemento que deseamos insertar a la variable temporal y buscamos la posición correcta donde se insertará. Esto último se hace en el bucle j.
+				<br>
+				Así, se recorren todos los elementos ya ordenados desde la posición más alta (j=i-1) hasta las más bajas, y mientras el subíndice sea válido (j>=0) y el valor que deseamos insertar (temporal) sea menor que el elemento x[j]. Esto hace que realmente se ubique en la posición correcta.
+				<br>
+				En cada iteración del bucle j se desplaza el elemento comparado x[j] hacia la posición x[j+1] para hacerle sitio al elemento a insertar (temporal). Al término del bucle j se habrá encontrado la posición adecuada para insertar temporal y, por lo tanto, se realiza la asignación x[j+1] = temporal. Esta secuencia se vuelve a repetir hasta que se hayan insertado en orden los elementos restantes.
+				</p>
+				
+				<p><em><small>Liza Ávila, C. (2013). Algoritmos y su codificación en C++. Capitulo 7 Arreglos Unidimensionales.(pp 7.10) (Vol. Primera edición). Los Olivos, Lima: Fondo Editorial UPN. Recuperado de <a href="http://bibliotecavirtual.unad.edu.co/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=nlebk&AN=1444739&lang=es&site=eds-live">http://bibliotecavirtual.unad.edu.co/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=nlebk&AN=1444739&lang=es&site=eds-live</a></small></em></p>
+			</article>	
+		</section>
+	
+		<aside>
+	 		 <h4 align="center"> Redes </h4> 
+			<a class="twitter-timeline" data-width="220" data-height="754" data-theme="dark" data-link-color="#2B7BB9" href="https://twitter.com/UniversidadUNAD?ref_src=twsrc%5Etfw">Tweets by UniversidadUNAD</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+		
+		</aside>
+	
+		<footer>
+			<a href="http://www.reliablecounter.com" target="_blank" ><img src="https://www.reliablecounter.com/count.php?page=73866059&digit=style/glowing/13/&reloads=0" alt="" title="" border="0"></a><br /><a href="http://foojee.net" target="_blank" style="font-family: Geneva, Arial; font-size: 9px; color: #330010; text-decoration: none;">foojee.net</a> 
+			
+			<p>Sitio elaborado por: Heather Peña, estudiante de Ing. de Sistemas - UNAD </p>
+			<p>&copy; 2018 </p>
+		</footer>
+	</div>
+		
 </body>
 </html>

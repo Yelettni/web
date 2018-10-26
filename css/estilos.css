@@ -12,11 +12,11 @@
 }
 
 body {
-  font-family: Baskerville, 'Palatino Linotype', Palatino, 'Century Schoolbook L', 'Times New Roman', 'serif',sans-serif;
+  font-family: comic sans MS;
   font-weight: 300;
   font-size: 20px;
   line-height: 1.5;
-  color: #050505;
+  color:#FDFBFB ;
   background: #B3B3B3;
   height: 100%;
   position: relative;
@@ -26,44 +26,43 @@ header{
 	background: #B3B3B3;
 	height: 100%;
 	float: left;
-	position: static;
-	
-	
-}
-nav{
-	background: #333333	;
-	height: 220px;
-}
-nav li{
+	}
+ul, ol{
 	list-style: none;
-	display:inline-flex;
-	padding: 10px 30px;
-	
-}
-nav a{
-	color: #F0B429;
-	font-size:  20px;
-	font-weight:100;
+		}
+nav li a {
 	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
-	text-decoration:inherit;
-	padding: 5px 15px;
-}
-
+	background-color:#333333;
+	color: #F0B429;
+	text-decoration:none;
+	padding:10px 37px;
+	display:block;
+    }
+nav>ul>li{
+	float: left;
+	}
+nav li ul{
+	display:none;
+	position: absolute;
+	min-width: 140px
+     }
+nav li:hover  ul{ 
+    display:block;
+    }
 nav a:hover{
-	background: #F47920;
+	background: #005883;
 	color: #FCFBFB;
-
-}
+    }
 
 a {
-  color: #333333;
+  color:#F9F5F6;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
 }
 a:hover, a:active, a:focus {
   color: #F0B429;
-  outline: none;
+  outline:none;
 }
 
 p {
@@ -73,12 +72,14 @@ p {
 h1, h2 {
   color: #F47920;
   font-family: "Source Sans Pro", sans-serif;
-  font-weight: 400;
+  font-weight:bold;
   margin: 0 0 30px 0;
+  font-size: 25px;
+	
 }
 
 h3, h4, h5, h6 {
-	color: #005883;
+	color: #F0B429;
 	font-family: "Gill Sans", Helvetica, Arial, "sans-serif";
 	font-weight: 400;
   margin: 0 0 30px 0;
@@ -86,14 +87,14 @@ h3, h4, h5, h6 {
 
 aside{
 	 float: right; 
-	 width: 250px;
-	 background: #FFFFFF;
+	 width: 220px;
+	 background: #333333;
 	 margin-top: 10px;
 	 border-radius: 10px;
-}
+	 }
 
 footer {
-	height: 50px;
+	height: 70px;
 	background: #000000;
 	color: #FFFFFF;
 	clear: both;
@@ -103,13 +104,39 @@ footer {
 	line-height: 1px;
 	padding: 10px;
 }
+#contenido {
+	float: left;
+	width: 850px;
+	background: #333333;
+	border-radius: 10px;
+	overflow:  hidden;
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
 
 #contenedor{
-	width: 960px;
+	width: 1100px;
 	margin: auto;
 	margin-top: 20px; 
 	border-radius: 10px; 
 	overflow: hidden;
 	margin-bottom: 20px;
+}
+#rapa{
+	font-style: italic;
+	font-family:verdana;
+	font-size: 12px;
+}
+
+.introduccion, img{
+	 float:left;
+	 margin: 10px;
+}
+.introduccion,.inicio,.lec1,.lec2,.lec3 p{
+	margin: 10px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	font-family: Comic Sans MS;
 }
 
